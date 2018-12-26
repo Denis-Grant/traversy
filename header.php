@@ -21,38 +21,45 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ascentus' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$ascentus_description = get_bloginfo( 'description', 'display' );
-			if ( $ascentus_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $ascentus_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+		<!--========== HEADER ==========-->
+		<header class="header navbar-fixed-top">
+		<!-- Navbar -->
+		<nav class="navbar" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="menu-container">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="toggle-icon"></span>
+					</button>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ascentus' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+					<!-- Logo -->
+					<div class="logo">
+						<a class="logo-wrap" href="index.html">
+							<img class="logo-img logo-img-main" src="img/logo.png" alt="Asentus Logo">
+							<img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Asentus Logo">
+						</a>
+					</div>
+					<!-- End Logo -->
+				</div>
 
-	<div id="content" class="site-content">
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-collapse">
+					<div class="menu-container">
+						<ul class="navbar-nav navbar-nav-right">
+							<li class="nav-item"><a class="nav-item-child nav-item-hover active" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="pricing.html">Pricing</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">Products</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.html">FAQ</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Navbar Collapse -->
+			</div>
+		</nav>
+		<!-- Navbar -->
+	</header>
+	<!--========== END HEADER ==========-->
