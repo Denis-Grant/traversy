@@ -27,7 +27,7 @@ get_header();
 <!-- Wrapper for slides -->
 <div class="carousel-inner" role="listbox">
 	<div class="item active">
-		<img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
+		<img class="img-responsive" src="<?php echo get_theme_file_uri('/img/1920x1080/01.jpg')?>" alt="Slider Image">
 		<div class="container">
 			<div class="carousel-centered">
 				<div class="margin-b-40">
@@ -39,7 +39,7 @@ get_header();
 		</div>
 	</div>
 	<div class="item">
-		<img class="img-responsive" src="img/1920x1080/02.jpg" alt="Slider Image">
+		<img class="img-responsive" src="<?php echo get_theme_file_uri('/img/1920x1080/02.jpg')?>" alt="Slider Image">
 		<div class="container">
 			<div class="carousel-centered">
 				<div class="margin-b-40">
@@ -168,7 +168,7 @@ get_header();
 	<div class="col-sm-4 sm-margin-b-50">
 		<div class="margin-b-20">
 			<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-				<img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
+				<img class="img-responsive" src="<?php echo get_theme_file_uri('/img/970x647/01.jpg')?>" alt="Latest Products Image">
 			</div>
 		</div>
 		<h4><a href="#">Triangle Roof</a> <span class="text-uppercase margin-l-20">Management</span></h4>
@@ -181,7 +181,7 @@ get_header();
 	<div class="col-sm-4 sm-margin-b-50">
 		<div class="margin-b-20">
 			<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-				<img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
+				<img class="img-responsive" src="<?php echo get_theme_file_uri('/img/970x647/02.jpg')?>" alt="Latest Products Image">
 			</div>
 		</div>
 		<h4><a href="#">Curved Corners</a> <span class="text-uppercase margin-l-20">Developmeny</span></h4>
@@ -194,7 +194,7 @@ get_header();
 	<div class="col-sm-4 sm-margin-b-50">
 		<div class="margin-b-20">
 			<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-				<img class="img-responsive" src="img/970x647/03.jpg" alt="Latest Products Image">
+				<img class="img-responsive" src="<?php echo get_theme_file_uri('/img/970x647/03.jpg')?>" alt="Latest Products Image">
 			</div>
 		</div>
 		<h4><a href="#">Bird On Green</a> <span class="text-uppercase margin-l-20">Design</span></h4>
@@ -215,22 +215,22 @@ get_header();
 		<!-- Swiper Wrapper -->
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
-				<img class="swiper-clients-img" src="img/clients/01.png" alt="Clients Logo">
+				<img class="swiper-clients-img" src="<?php echo get_theme_file_uri('/img/clients/01.png')?>" alt="Clients Logo">
 			</div>
 			<div class="swiper-slide">
-				<img class="swiper-clients-img" src="img/clients/02.png" alt="Clients Logo">
+				<img class="swiper-clients-img" src="<?php echo get_theme_file_uri('/img/clients/02.png')?>" alt="Clients Logo">
 			</div>
 			<div class="swiper-slide">
-				<img class="swiper-clients-img" src="img/clients/03.png" alt="Clients Logo">
+				<img class="swiper-clients-img" src="<?php echo get_theme_file_uri('/img/clients/03.png')?>" alt="Clients Logo">
 			</div>
 			<div class="swiper-slide">
-				<img class="swiper-clients-img" src="img/clients/04.png" alt="Clients Logo">
+				<img class="swiper-clients-img" src="<?php echo get_theme_file_uri('/img/clients/04.png')?>" alt="Clients Logo">
 			</div>
 			<div class="swiper-slide">
-				<img class="swiper-clients-img" src="img/clients/05.png" alt="Clients Logo">
+				<img class="swiper-clients-img" src="<?php echo get_theme_file_uri('/img/clients/05.png')?>" alt="Clients Logo">
 			</div>
 			<div class="swiper-slide">
-				<img class="swiper-clients-img" src="img/clients/06.png" alt="Clients Logo">
+				<img class="swiper-clients-img" src="<?php echo get_theme_file_uri('/img/clients/06.png')?>" alt="Clients Logo">
 			</div>
 		</div>
 		<!-- End Swiper Wrapper -->
@@ -362,7 +362,7 @@ get_header();
 	</div>
 </div>
 <div class="promo-section-img-right">
-	<img class="img-responsive" src="img/970x970/01.jpg" alt="Content Image">
+	<img class="img-responsive" src="<?php echo get_theme_file_uri('/img/970x970/01.jpg')?>" alt="Content Image">
 </div>
 </div>
 <!-- End Promo Section -->
@@ -385,7 +385,7 @@ get_header();
 			<!-- Work -->
 			<div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
 				<div class="work-overlay">
-					<img class="full-width img-responsive" src="img/800x400/01.jpg" alt="Portfolio Image">
+					<img class="full-width img-responsive" src="<?php echo get_theme_file_uri('/img/800x400/01.jpg')?>" alt="Portfolio Image">
 				</div>
 				<div class="work-content">
 					<h3 class="color-white margin-b-5">Art Of Coding</h3>
@@ -399,7 +399,7 @@ get_header();
 			<!-- Work -->
 			<div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
 				<div class="work-overlay">
-					<img class="full-width img-responsive" src="img/397x400/01.jpg" alt="Portfolio Image">
+					<img class="full-width img-responsive" src="<?php echo get_theme_file_uri('/img/397x400/01.jpg')?>" alt="Portfolio Image">
 				</div>
 				<div class="work-content">
 					<h3 class="color-white margin-b-5">Clean Design</h3>
@@ -413,7 +413,7 @@ get_header();
 			<!-- Work -->
 			<div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
 				<div class="work-overlay">
-					<img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
+					<img class="full-width img-responsive" src="<?php echo get_theme_file_uri('/img/397x300/01.jpg')?>" alt="Portfolio Image">
 				</div>
 				<div class="work-content">
 					<h3 class="color-white margin-b-5">Clean Design</h3>
@@ -427,7 +427,7 @@ get_header();
 			<!-- Work -->
 			<div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".4s">
 				<div class="work-overlay">
-					<img class="full-width img-responsive" src="img/397x300/02.jpg" alt="Portfolio Image">
+					<img class="full-width img-responsive" src="<?php echo get_theme_file_uri('/img/397x300/02.jpg')?>" alt="Portfolio Image">
 				</div>
 				<div class="work-content">
 					<h3 class="color-white margin-b-5">Clean Design</h3>
@@ -441,7 +441,7 @@ get_header();
 			<!-- Work -->
 			<div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".5s">
 				<div class="work-overlay">
-					<img class="full-width img-responsive" src="img/397x300/03.jpg" alt="Portfolio Image">
+					<img class="full-width img-responsive" src="<?php echo get_theme_file_uri('/img/397x300/03.jpg')?>" alt="Portfolio Image">
 				</div>
 				<div class="work-content">
 					<h3 class="color-white margin-b-5">Clean Design</h3>

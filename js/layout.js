@@ -1,3 +1,5 @@
+jQuery( document ).ready( function( $ ) {
+
 var Layout = function () {
     'use strict';
     
@@ -89,3 +91,5 @@ var Layout = function () {
 $(document).ready(function() {
     Layout.init();
 });
+
+} );

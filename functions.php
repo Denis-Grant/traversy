@@ -129,6 +129,20 @@ function ascentus_scripts() {
 	wp_enqueue_style( 'ascentus-animate', get_template_directory_uri() . '/css/animate.css' );
 	wp_enqueue_style( 'ascentus-swiper', get_template_directory_uri() . '/vendor/swiper/css/swiper.min.css' );
 
+	wp_enqueue_script( 'ascentus-bootstrap-js', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-easing-js', get_template_directory_uri() . '/vendor/jquery.easing.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-backtotoping-js', get_template_directory_uri() . '/vendor/jquery.back-to-top.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-smoothscroll-js', get_template_directory_uri() . '/vendor/jquery.smooth-scroll.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-wow-js', get_template_directory_uri() . '/vendor/jquery.wow.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-swiper-js', get_template_directory_uri() . '/vendor/swiper/js/swiper.jquery.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-masonry-js', get_template_directory_uri() . '/vendor/masonry/jquery.masonry.pkgd.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-images-js', get_template_directory_uri() . '/vendor/masonry/imagesloaded.pkgd.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-layout-js', get_template_directory_uri() . '/js/layout.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-wow-js', get_template_directory_uri() . '/js/components/wow.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-swiper-js', get_template_directory_uri() . '/js/components/swiper.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'ascentus-masonary-js-min', get_template_directory_uri() . '/js/components/masonry.min.js', array('jquery'), '20151215', true );
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

@@ -37,8 +37,8 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a class="logo-wrap" href="index.html">
-							<img class="logo-img logo-img-main" src="img/logo.png" alt="Asentus Logo">
-							<img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Asentus Logo">
+							<img class="logo-img logo-img-main" src="<?php echo get_theme_file_uri('img/logo.png');?>" alt="Asentus Logo">
+							<img class="logo-img logo-img-active" src="<?php echo get_theme_file_uri('img/logo-dark.png')?>" alt="Asentus Logo">
 						</a>
 					</div>
 					<!-- End Logo -->
