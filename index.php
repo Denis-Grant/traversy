@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file
+ * The main template file (Github)
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -12,8 +12,7 @@
  * @package ascentus
  */
 
-get_header();
-?>
+get_header(); ?>
 <!--========== SLIDER ==========-->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 <div class="container">
@@ -176,8 +175,8 @@ get_header();
 					));?>
 				</div>
 			</div>
-			<h4><a href="#">Triangle Roof</a> <span class="text-uppercase margin-l-20">Management</span></h4>
-			<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+			<h4><a href="#"><?php the_title(); ?></a> <span class="text-uppercase margin-l-20">Management</span></h4>
+			<p><?php the_content();?></p>
 			<a class="link" href="#">Read More</a>
 		</div>
 	<?php endwhile;
